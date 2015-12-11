@@ -15,7 +15,6 @@ mongoose.connect("mongodb://localhost/googlemap_app");
 
 // Logging and Parsing
 app.use(express.static(__dirname + '/public'));
-console.log(__dirname);                 // sets the static files location to public
 app.use('/bower_components',  express.static(__dirname + '/bower_components')); // Use BowerComponents
 app.use(morgan('dev'));                                         // log with Morgan
 app.use(bodyParser.json());                                     // parse application/json
